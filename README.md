@@ -10,5 +10,6 @@ A website provides weather updates along with google map of the given city.
   1. HTML
   2. CSS
   3. JAVASCRIPT
+  4. Fetching Data via API
 
 
