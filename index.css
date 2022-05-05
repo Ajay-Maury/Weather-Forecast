@@ -1,0 +1,78 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.mapouter{
+position:relative;
+text-align:right;padding-top: 5px;
+}
+.gmap_canva
+
+{
+overflow:hidden;
+background:none!important;
+height:400px;
+width:600px;
+}
+.week_box
+{
+display: grid;
+grid-template-columns: repeat(7,1fr);
+grid-gap: 20px;
+text-align: center;
+}
+.box
+{
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+border-radius: 10px;
+}
+.week_box>div:hover
+{
+border: 1px solid gray;
+box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+#navbar
+{
+display: flex;
+justify-content: space-around;
+font-size: 2em;
+font-weight: bolder;
+background-color: burlywood;
+align-items: center;
+height: 50px;
+border-top: 3px solid rgb(243, 173, 81);
+}
+#navbar>div
+{
+ display: inline-block;
+}
+#navbar>span>input
+{
+font-size: 0.6em;
+}
+#navbar>span>button
+{
+font-size: 0.6em;
+}
+#mshow
+{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-template-rows: 350px;
+padding: 0px 5px;
+font-size: 1.1em;
+}
+#show
+{
+width: auto;
+margin: auto 5%;
+}
+#container
+{
+background-image: url("https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg?w=740");
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 600px;
+}
