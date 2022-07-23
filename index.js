@@ -4,8 +4,8 @@ let cnt =7;
 async function getWeatherData()
 {
     try {
-    let city=document.getElementById("city").value;
-    let res = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&cnt=7&appid=3a4a39b4b863bc3e8f550696322a998b&units=metric`);
+    let city=document.getElementById("city").value || "Lucknow";
+    let res = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&cnt=7&appid=${key}&units=metric`);
   
     let data = await res.json();
     // console.log("data : ",data)
@@ -85,7 +85,7 @@ function showWeather(d)
         let pressure = document.createElement("p")
         pressure.innerText = `Pressure : ${d.list[i].main.pressure}`;
 
-        console.log(icon,cdes,max_temp,min_temp,humidity,pressure)
+        // console.log(icon,cdes,max_temp,min_temp,humidity,pressure)
         
         box.append(icon,cdes,line,max_temp,min_temp)        
         // box.append(icon,cdes,line,max_temp,min_temp,humidity,pressure)        
@@ -108,4 +108,4 @@ function showWeather(d)
 }
 
 
-
+getWeatherData()
